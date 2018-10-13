@@ -8,13 +8,52 @@
 
     <include layout="@layout/content_main" />
 
+    <ListView
+        android:id="@+id/subtitle_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/choose_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin_edges"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:srcCompat="@drawable/ic_film" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:srcCompat="@drawable/ic_pause" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@android:color/holo_green_dark"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        app:srcCompat="@drawable/ic_play" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="@dimen/fab_margin_edges"
+        android:layout_marginTop="@dimen/fab_margin"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:srcCompat="@drawable/ic_camera" />
 
 </android.support.design.widget.CoordinatorLayout>
